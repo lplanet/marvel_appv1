@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import CharactersList from './components/CharactersList';
+import NumberOfCharacters from './components/NumberOfCharacters';
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -36,6 +37,7 @@ function App() {
   return (
     <>
       <h1>Marvel Characters</h1>
+      <NumberOfCharacters characters={characters} />
       <CharactersList characters={characters} />
     </>
   );
